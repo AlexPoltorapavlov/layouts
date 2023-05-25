@@ -112,7 +112,6 @@
 }
 
 .right-background .plant-button-for-choice {
-    background-color: #498553;
     position: absolute;
     bottom: 0px;
     justify-content: space-between;
@@ -171,6 +170,7 @@
     width: 40px;
 }
 
+
 .registration-box .plant-name-box input:valid~label,
 .registration-box .code-box input:valid~label {
     display: none;
@@ -179,4 +179,26 @@
 .registration-box .plant-name-box input:focus~label,
 .registration-box .code-box input:focus~label {
     color: gray;
+}
+
+
+
+.plant-button-for-choice:hover {
+    transition: 1s;
+    backdrop-filter: blur(10px);
+}
+
+.plant-button-for-choice:hover .check-circle {
+    transition: 1s;
+    display:none;
+}
+
+.plant-button-for-choice:not(hover) .zoom-in {
+    transition: 1s;
+    display:none;
+}
+
+.plant-button-for-choice:hover .zoom-in {
+    transition: 1s;
+    display: block;
 }
